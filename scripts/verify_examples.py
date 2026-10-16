@@ -23,12 +23,15 @@ def main():
         rows = pdr.normalize(original.decode('utf-8-sig'), Path(source['input_name']).suffix)
         assert rows == manifest['segments'], f'{run}: source does not reproduce segments'
         assert pdr.digest(original) == source['original_sha256'], f'{run}: original digest mismatch'
-        result = pdr.audit(manifest, json.loads((run / 'ledger.json').read_text(encoding='utf-8')),
-                           (run / 'reading.md').read_text(encoding='utf-8'))
-        saved = json.loads((run / 'audit.json').read_text(encoding='utf-8'))
-        assert result == saved, f'{run}: committed audit is stale'
-        print(run.parent.name, result['status'], result['metrics'])
-        failed |= result['status'] != 'pass'
+        ledger = json.loads((run / 'ledger.json').read_text(encoding='utf-8'))
+        reports = [run / 'reading.md', *sorted(run.glob('reading.*.md'))]
+        for report in reports:
+            result = pdr.audit(manifest, ledger, report.read_text(encoding='utf-8'))
+            audit_name = report.name.replace('reading', 'audit', 1).replace('.md', '.json')
+            saved = json.loads((run / audit_name).read_text(encoding='utf-8'))
+            assert result == saved, f'{report}: committed audit is stale'
+            print(run.parent.name, report.name, result['status'], result['metrics'])
+            failed |= result['status'] != 'pass'
     return int(failed)
 
 

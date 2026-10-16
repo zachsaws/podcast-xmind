@@ -1,20 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="600" viewBox="0 0 1280 600" role="img" aria-labelledby="title desc">
-  <title id="title">Podcast XMind</title>
-  <desc id="desc">Read the depth, skip the filler. Source to ledger to layered reading to evidence. A scan, a deep read and source evidence.</desc>
-  <rect width="1280" height="600" fill="#f5f1e8"/>
-  <path d="M64 63H1216" stroke="#1d3032" stroke-width="2"/>
-  <text x="64" y="103" font-family="Arial,sans-serif" font-size="19" letter-spacing="3" fill="#44615c">PODCAST XMIND / 01</text>
-  <text x="60" y="203" font-family="Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-3" fill="#17332f">Read the depth.</text>
-  <text x="60" y="287" font-family="Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-3" fill="#17332f">Skip the filler.</text>
-  <text x="66" y="339" font-family="Arial,sans-serif" font-size="23" fill="#596a62">Keep the correction. The mechanism. The useful aside.</text>
-  <g transform="translate(920 116)" fill="none" stroke="#cf5439" stroke-width="5" stroke-linecap="round">
-    <path d="M0 82V120M22 49V153M44 16V184M66 54V147M88 0V199M110 48V151M132 71V128M154 36V163M176 68V131M198 84V115"/>
-  </g>
-  <path d="M64 395H1216" stroke="#b6b9aa"/>
-  <g font-family="Arial,sans-serif">
-    <g fill="#cf5439" font-size="16" letter-spacing="2"><text x="64" y="437">01 / SOURCE</text><text x="368" y="437">02 / LEDGER</text><text x="672" y="437">03 / READ</text><text x="976" y="437">04 / EVIDENCE</text></g>
-    <g fill="#17332f" font-size="24" font-weight="600"><text x="64" y="480">Know the scope</text><text x="368" y="480">Track each idea</text><text x="672" y="480">Choose your depth</text><text x="976" y="480">Trace it back</text></g>
-    <g fill="#596a62" font-size="17"><text x="64" y="516">Full / partial / unknown</text><text x="368" y="516">Claims + speakers + limits</text><text x="672" y="516">Scan / deep read</text><text x="976" y="516">Original words + location</text></g>
-  </g>
-  <path d="M64 556H1216" stroke="#1d3032" stroke-width="2"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+<title id="title">Podcast XMind</title><desc id="desc">Read the podcast. Keep the details. Source audio becomes a scan, a deep read and source evidence.</desc>
+<rect width="1280" height="480" fill="#F4F0E6"/>
+<path d="M60 77H1220M60 425H1220" stroke="#183C35" stroke-width="2"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#183C35">
+<text x="62" y="51" font-size="17" font-weight="700" letter-spacing="2">PX / AN AGENT SKILL FOR PODCAST READERS</text>
+<text x="57" y="197" font-size="108" font-weight="700" letter-spacing="-4">Podcast</text>
+<text x="57" y="306" font-size="108" font-weight="700" letter-spacing="-4">XMind<tspan fill="#B9472F">.</tspan></text>
+<text x="63" y="373" font-size="23">READ THE PODCAST. KEEP THE DETAILS.</text>
+<text x="62" y="455" font-size="15" fill="#55685C">Open source / Source-linked reading / Information ledgers</text>
+<text x="982" y="455" font-size="15" fill="#55685C">zachsaws / podcast-xmind</text>
+</g>
+<g stroke="#B9472F" stroke-width="6" stroke-linecap="round">
+<path d="M736 223V257M755 199V281M774 169V311M793 205V275M812 188V292"/>
+</g>
+<g fill="none" stroke="#183C35" stroke-width="2"><path d="M840 240H897M897 142V339M897 142H947M897 240H947M897 339H947"/></g>
+<g fill="#B9472F"><circle cx="947" cy="142" r="5"/><circle cx="947" cy="240" r="5"/><circle cx="947" cy="339" r="5"/></g>
+<g font-family="Arial,Helvetica,sans-serif" fill="#183C35" font-size="29" font-weight="700"><text x="972" y="142">Scan</text><text x="972" y="240">Deep read</text><text x="972" y="339">Evidence</text></g>
+<g font-family="Arial,Helvetica,sans-serif" fill="#55685C" font-size="16"><text x="972" y="168">Find your way in.</text><text x="972" y="266">Follow the reasoning.</text><text x="972" y="365">Go back to the source.</text></g></svg>

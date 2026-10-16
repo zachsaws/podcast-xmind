@@ -16,6 +16,7 @@ For code changes, run:
 ```sh
 python3 -m unittest discover -s tests -v
 python3 scripts/verify_examples.py
+python3 scripts/check_docs.py
 python3 scripts/package.py --out dist
 ```
 
@@ -24,3 +25,15 @@ seen, inspect the source and output in both directions, and document both failur
 and limitations. Keep the skill folder self-contained. New downloader, paid ASR
 or cloud-upload integrations require explicit capability, privacy and cost
 boundaries; do not make them implicit prerequisites for local text use.
+
+## Documentation and artwork
+
+Keep the English default README and `README.zh-CN.md` aligned on capabilities
+and verification status. Translated examples must say whether they are an
+editorial rendering or an independent agent run, and retain original evidence.
+
+`python3 scripts/build_readme_assets.py` regenerates the repository graphics.
+This optional maintainer tool requires Pillow and system Arial/DejaVu fonts
+(or explicit `--font` and `--bold-font` paths). It is not part of the skill's
+standard-library runtime. The GIF illustrates saved synthetic artifacts;
+do not relabel it as a live UI recording or a comparative benchmark.

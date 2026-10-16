@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "scope": "partial",
+  "errors": [],
+  "warnings": [
+    "Source scope is partial; full-episode coverage is not established",
+    "Structural checks only: extraction completeness, truth, importance, entailment and translation require semantic review"
+  ],
+  "metrics": {
+    "reviewed_segments": 8,
+    "total_segments": 8,
+    "eligible_unique_units": 11,
+    "retained_unique_units": 11,
+    "topics": 4
+  }
+}

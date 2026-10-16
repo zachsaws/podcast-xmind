@@ -6,6 +6,11 @@ no real business, hospital, user policy or publishing plan.
 [Input](excerpt.txt) → [independent agent reading](run/reading.md) →
 [ledger](run/ledger.json) → [actual audit](run/audit.json).
 
+An [English editorial rendering](run/reading.en.md) is also available, with its
+own [structural audit](run/audit.en.json) against the same source ledger. It is
+not a second independent model evaluation. The README graphics illustrate this
+saved run; they are not screenshots or a recording of an application.
+
 | Source detail | Where to inspect it in the reading |
 |---|---|
 | Host assumes 1000 paying customers | Growth section preserves the question and the correction |

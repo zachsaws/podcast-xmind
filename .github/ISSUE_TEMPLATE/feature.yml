@@ -1,0 +1,28 @@
+name: Improve the reading workflow
+description: Propose a concrete reading, evidence or installation improvement
+title: "[Idea] "
+body:
+  - type: textarea
+    id: situation
+    attributes:
+      label: What were you trying to read?
+      description: Describe the input and goal. Do not share private or copyrighted full transcripts.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What should work differently?
+      description: Explain the user-visible result and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Example or acceptance check
+      description: A minimal rights-cleared example is especially useful.
+  - type: input
+    id: host
+    attributes:
+      label: Agent or environment
+      placeholder: Codex, ChatGPT Work, Claude Code, other

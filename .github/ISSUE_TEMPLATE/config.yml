@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Installation and Chat compatibility
+    url: https://github.com/zachsaws/podcast-xmind/blob/main/docs/compatibility.md
+    about: Read the supported installation paths and observed limits first.
