@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="600" viewBox="0 0 1280 600" role="img" aria-labelledby="title desc">
+  <title id="title">Podcast Deep Reader</title>
+  <desc id="desc">Read the depth, skip the filler. Source to ledger to layered reading to evidence. A scan, a deep read and source evidence.</desc>
+  <rect width="1280" height="600" fill="#f5f1e8"/>
+  <path d="M64 63H1216" stroke="#1d3032" stroke-width="2"/>
+  <text x="64" y="103" font-family="Arial,sans-serif" font-size="19" letter-spacing="3" fill="#44615c">PODCAST DEEP READER / 01</text>
+  <text x="60" y="203" font-family="Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-3" fill="#17332f">Read the depth.</text>
+  <text x="60" y="287" font-family="Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-3" fill="#17332f">Skip the filler.</text>
+  <text x="66" y="339" font-family="Arial,sans-serif" font-size="23" fill="#596a62">Keep the correction. The mechanism. The useful aside.</text>
+  <g transform="translate(920 116)" fill="none" stroke="#cf5439" stroke-width="5" stroke-linecap="round">
+    <path d="M0 82V120M22 49V153M44 16V184M66 54V147M88 0V199M110 48V151M132 71V128M154 36V163M176 68V131M198 84V115"/>
+  </g>
+  <path d="M64 395H1216" stroke="#b6b9aa"/>
+  <g font-family="Arial,sans-serif">
+    <g fill="#cf5439" font-size="16" letter-spacing="2"><text x="64" y="437">01 / SOURCE</text><text x="368" y="437">02 / LEDGER</text><text x="672" y="437">03 / READ</text><text x="976" y="437">04 / EVIDENCE</text></g>
+    <g fill="#17332f" font-size="24" font-weight="600"><text x="64" y="480">Know the scope</text><text x="368" y="480">Track each idea</text><text x="672" y="480">Choose your depth</text><text x="976" y="480">Trace it back</text></g>
+    <g fill="#596a62" font-size="17"><text x="64" y="516">Full / partial / unknown</text><text x="368" y="516">Claims + speakers + limits</text><text x="672" y="516">Scan / deep read</text><text x="976" y="516">Original words + location</text></g>
+  </g>
+  <path d="M64 556H1216" stroke="#1d3032" stroke-width="2"/>
+</svg>

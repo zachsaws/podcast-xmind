@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "scope": "full",
+  "errors": [],
+  "warnings": [
+    "Structural checks only: extraction completeness, truth, importance, entailment and translation require semantic review"
+  ],
+  "metrics": {
+    "reviewed_segments": 88,
+    "total_segments": 88,
+    "eligible_unique_units": 33,
+    "retained_unique_units": 32,
+    "topics": 10
+  }
+}

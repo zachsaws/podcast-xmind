@@ -1,0 +1,356 @@
+{
+  "segments": [
+    {
+      "text": "[Soft intro music]",
+      "speaker": null
+    },
+    {
+      "text": "When I learned that it was okay to not know everything, that it’s okay to ask questions and ask for understanding, allow myself to be mentored, that’s when opportunities presented themselves, and that’s when I gained the best experiences.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Welcome to Small Steps, Giant Leaps, the podcast from NASA’s Academy of Program/Project & Engineering Leadership, or APPEL. I’m your host Andres Almeida.",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "Knowledge at NASA is passed from person to person, program to program. Heather Koehler, NASA Technical Fellow for Flight Mechanics, has worked on many programs, including the space shuttle and the Space Launch System rocket for Artemis.",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "She also developed a NASA Technical Standard, a documented set of rules and specifications that says how systems should be designed and operated, on protecting spacecraft from micrometeoroids. It’s still in use today.",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "Hi, Heather, welcome to the podcast.",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "Thank you, Andres, for having me. I’m excited to be here.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "You’ve worked on several programs. You’ve written space shuttle flight software. You’ve led technical teams on the Space Launch System. How has knowledge from one program carried over to another?",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "At NASA, it’s common for engineers to support multiple programs over their career.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "As you mentioned, I started working on the space shuttle, but my career has spanned other manned missions, science, and planetary missions as well.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "If you’re in an engineering discipline like flight mechanics, for example, you provide the mission designs, you develop simulations and models, you perform analysis for all the different phases of a program’s life cycle.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "And you do that repeatedly for all the different programs and projects over your career. Every program you support, you gain understanding of all the systems and the components that make up that flight system.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "You learn how to solve problems with specialized tools and methods tailored to solve that program’s unique challenges. So, spending time and energy in solving these complex programs, for one, often will translate into solutions or close approximations for another program.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Knowledge gets transferred from one program to another through the experiences of the engineers as they transition to different programs.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "So, for example, the guidance, navigation, and control algorithms we developed for a solar sail CubeSat mission, those algorithms include models for reaction control thrusters or navigation sensors or star trackers.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Engineers are also really good at recycling and reusing those models in other flight mechanics simulations for a different mission. And they might use the same navigation sensors or similarly sized thrusters.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "So, the knowledge that you’ve gained in integrating and operating, characterizing the performance of one system is often a really good starting place for how you start the next program.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Yeah.",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "You often will adapt your tool sets and models to new constraints or slightly different environments, but the methodology you refined on that previous effort is often the very best starting point for the next one.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Another example, you know, my previous work on the space shuttle program, that was just a really complex effort. It involved the integration of every major engineering discipline, propulsion, avionics, structures, communications – just to name a few.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "So, some of those major components in the space shuttle system, they were recycled and upgraded to what we see today in the Artemis Program: the RS-25 engines, the solid rocket boosters, and the core stage tank, even some of the software processes like launch day targeting. Those aspects of the space shuttle software architecture were recycled and reused for the Space Launch System software.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "The engineers that designed and developed and operated the space shuttle, well, some of them are still here today and they support SLS and Orion (Artemis Program) today. So, they brought that shuttle knowledge with them into the new architecture.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "So, having that experience on those past programs is just really helpful in your design meetings and your review boards when you’re trying to solve new problems, even if it’s with the same hardware or similar hardware, but it’s being used in a slightly different environment.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "And what about those values and soft skills that you’ve developed over the years? Do they transfer over pretty well?",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "Oh, oh, yes. You know, those soft skills, presenting the really technical solutions to a problem, you grow and develop those skills repeatedly, right? You’re bringing those in front of your chief engineers, in front of working groups.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "You really go through the ringer in trying to communicate where the risks are, where the gaps in your understanding are, and just trying to make sure that you can communicate whatever the solution is to that problem to the right audience.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "So, you really refine your skills over the years on these programs going through the entire life cycle.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Now, we know not all knowledge gets written down, so how do you ensure it doesn’t get lost?",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "That’s a really great point. I think humans learn best from observing others and doing something firsthand and doing it repeatedly.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "So, I was very blessed to have had great mentors throughout my career. They let me practice and sometimes fail and sometimes fail again, but they kept letting me perform those tasks and gaining that experience, but always under their guidance.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "My best mentors were very patient. They explained what they were working on, how to use the software tool, how to design something to avoid a failure. These people sat with me in technical meetings. They whispered in my ear. They had side conversations with me in the hallway.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Everything from the technical aspects of a system to just the understanding the organizational cultures, the personalities of the people in the room – that really helped me understand how to be a better technical leader and how to maybe motivate and influence decisions even when you’re not in a position of authority. That strong mentoring really can shape a career as it did mine.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Many organizations around NASA, they try to pair senior engineers with early career engineers to make sure knowledge isn’t lost.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "This is really a common practice on the Space Launch System, one of the programs that I worked on, where they would pair mid-career engineers with senior engineers in a very specific discipline or a leadership role, and then that prepared that person to do the next level of that job.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "So, pairing different experienced people on new programs exposes those early career employees with opportunities. They get hands-on experience as the designer, as the developer, as the tester or the lead.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "They get direct mentoring from a senior person, and they’re not really completely responsible for the product because you’re working with that senior expert right by your side.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "In my organization, the NESC (NASA Engineering and Safety Center) we will often invite early career employees to serve on technical assessment teams. Again, they get exposure to solving complex problems, they’re working with the team, they’re learning alongside more experienced engineers.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "And another way that knowledge and experience is gained and preserved is from doing independent analyses or tests. NASA’s investing a lot in commercial space partnerships.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "And that sometimes means we aren’t responsible for designing the system, but we’re buying a service instead. So, performing independent analysis or simulation of that commercial provider system, you get hands-on experience. You’re modeling specific hardware under different operational constraints, but you’re also gaining insight into that different system.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "And the engineers that perform those independent insight tasks can still learn valuable lessons on where the limitations of a certain design are, how requirements can be interpreted differently, and they see creative new applications of technology.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "And then those lessons stay with the engineer and they contribute to their overall experience base and can be applied to the next mission.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "What are some of the formal ways you pass on these lessons?",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "Some of the formal ways that we share lessons, preserve and transfer knowledge is by presenting webinars, technical presentations of engineering material. It might be fundamentals or it could be cutting edge technology or the lessons learned from a past program or a previous flight anomaly or failure.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "In my organization, the NESC, NASA Engineering and Safety Center, we keep a library of recorded webinars from NASA experts covering all of those types of engineering disciplines and flight and test programs.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "We provide training regularly on new software tools or engineering processes, including leadership in systems engineering, all the aspects that you might need to run and manage a technology or flight project.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "We bring back retired NASA engineers to teach special topics or historical lessons, and we record interviews with experts to capture lessons learned along the way. So, across NASA, you can find knowledge capture in the form of best practices handbooks, technical bulletins, technical reports or guidelines, and workshops.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "And we make these courses available most of the time to the public, but it’s definitely available on our NASA websites to ensure that this information is not lost for the next generation.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Can we talk a little bit about what you’ve worked on in the past? You developed a model that is a NASA technical standard. It’s still in use today and it was written to protect spacecraft from micrometeoroids. What went behind the development of this standard?",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "Yeah, I think when developing a standard, you have to keep in mind who the standard is going to apply to. You have to know your audience and how they’re going to use it.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "In this particular case, spacecraft designers and operators for NASA had been reliant on a very simple model, a mathematical expression really, and it characterized one of the natural environments for spacecraft operating in space.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "It helped describe the risk to the spacecraft from exposure to this environment. The model, though, was based on a very limited set of observational data and had not been updated in decades from any new inputs.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "But the model was very simple to use and understand and therefore easy for engineers and spacecraft operators to adopt and implement. So, an important lesson to consider for adopting or developing a new standard, in this case, this new environment model that describes risk, is your model or your standard must be anchored in data.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "It needs to be relevant in the regime you’re flying, and you need to understand the limitations of that model or the underlying data that went into it.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Thinking back to some of your earlier questions about carrying knowledge and experience forward, it’s really crucial when developing a standard to document all of those uncertainties and assumptions and limits to when and how the model can be used.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Many experts contributed to developing this environment standard. They had decades of experience working different research programs and flight programs that collected and interpreted that data, and all of that went into this model for this standard.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Their collective knowledge and lessons learned, trying to apply that previous standard, just seeing all the gaps – they brought that understanding and that knowledge with them as a new and improved way of representing the risk from this environment. And that shaped how this new standard really was developed.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "We listened to the spacecraft designers and operators. We understood what were the important parameters that they needed to work with. And we made sure that when we put out that new standard, it had that information in them in there and that it was an easy-to-use format.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Wow. Did your perspective in knowledge sharing change at all when you became responsible for leading teams?",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "Oh, absolutely. Yes. It’s always been on my mind to emulate those leaders, the positive qualities and characteristics that they had.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "You know when you have a good leader: when they provide or set the overall vision and goals, but then they give you the autonomy and independence to find creative ways to execute whatever mission or goal is for the team. I want to be that kind of leader.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "I want to be that kind of leader for others, right? Because I’ve had the good fortune and experience of having those in my life.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "So, reflecting back on my first team, my first team lead and mentors, they helped me the most by sharing what they knew and not holding it back.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "They freely shared the data they had access to, the methods that they developed. All those little tips and tricks that they learned throughout their career, they shared that with me to make me a better engineer. And then in turn, that made me a better leader.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "So, in my leadership roles today, I really try to foster and encourage that same knowledge sharing because I’ve seen the benefits to organizations when we shift from being stovepiped and protective of data to when we’re more open and share it freely.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "You know, we’re all successful when everyone has access to information, especially in a technical organization if you’re really trying to do complex integration across multiple systems or multiple organizations.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "I try to remove barriers and enable others to be successful, and that’s providing them access to special flight mechanics tools or technical training or sharing information from senior experts, making them available to help improve designs.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "And then, also being really intentional about building tiger teams or assessment teams that have all the different perspectives and diverse skill sets all to get the best product, best solution for our customers.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "I’m curious about the image I’m seeing on the wall behind you. It’s the ISS flying over Earth, the limb of the Earth, and there’s a solar array behind it. Does the image mean something to you?",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "Yeah, so this image that I actually keep in my office and I reflect on it. I think it’s really appropriate, right, for the conversation today.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "This is a picture of the Earth limb with meteoroids entering, kind of burning up in the atmosphere.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Lovely.",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "And the image was taken from Space Station. So, my team, when I left that organization, they all signed this really nice picture that represents the environment that I worked on for years. And so, it’s really meaningful for me. And I like having it right by me.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "We’ll share the image on the podcast website at nasa.gov/podcasts.",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "What advice do you have for upcoming engineers?",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "We talked a lot about knowledge sharing, how experience and lessons can be transferred between programs. So, my advice would for new engineers would be: Be curious. Ask a lot of questions.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "That encourages mentoring, and that mentoring builds relationships. And you’re going to need to rely on those relationships over your career.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "They’re going to support you throughout the entire length of your career. Be willing to ask for help or guidance. Be open to working on a lot of different tasks. There is always something to be learned from an experience.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "You might even learn what not to do or what’s not going to work. But all of those experiences, positive and negative, are valuable lessons. And the more exposure you have to a variety of work, the more useful you are to this organization.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "I love that, and that seems to apply even to daily life, life outside of engineering.",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "[Laughter] I hope so. It’s what I try to teach my kids.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Heather, what was your giant leap?",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "My giant leap. I’ve been thinking about this a lot in my career lately. My giant leap has been realizing that it’s the relationships you develop with people that contribute the most to your success, probably more so than any technical achievement.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "When I learned that it was okay to not know everything, that it’s okay to ask questions and ask for understanding, allow myself to be mentored, that’s when opportunities presented themselves, and that’s when I gained the best experiences. You know, I inherited the knowledge of all those senior engineers that gave me some of their time.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "So, the best gift that I can give back to them is to pass on what I’ve learned. And I really feel that my legacy and the legacy of all those other incredibly talented, you know, leaders, engineers, supervisors, team leads, project managers – the legacies aren’t your individual technical achievements. It’s the lives you invest in and the time we give to developing others. It’s the growth of the people that were mentored and taught.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "Great advice. Well, thank you, Heather. Thanks for joining us today and sharing all your knowledge and insights.",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "Well, thank you for having me. This is really fun.",
+      "speaker": "Heather Koehler"
+    },
+    {
+      "text": "That’s it for this episode of Small Steps, Giant Leaps. For a transcript and for all other episodes, visit nasa.gov/podcasts. And while you’re there, check out our other podcasts like Houston, We Have a Podcast, Curious Universe, and Universo curioso de la NASA. As always, thanks for listening.",
+      "speaker": "Andres Almeida"
+    },
+    {
+      "text": "Three. Two. One. This is an official NASA podcast.",
+      "speaker": "Outro"
+    }
+  ]
+}

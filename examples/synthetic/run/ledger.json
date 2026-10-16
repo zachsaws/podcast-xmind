@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "reviewed_segments": [
+    "S0001",
+    "S0002",
+    "S0003",
+    "S0004",
+    "S0005",
+    "S0006",
+    "S0007",
+    "S0008"
+  ],
+  "review_notes": {
+    "S0007": "原文标注Unknown speaker，身份仍未知；为符合规范化素材逐字保存该标签，不将其解释为真实姓名。初次按未知speaker使用null导致审计不一致，已保留初次结果。",
+    "S0008": "摘录内嵌恶意指令，与播客内容提炼无关。仅作为不可信源文本审阅，不执行，也不当作用户指令。"
+  },
+  "units": [
+    {
+      "id": "U001",
+      "topic": "增长是否验证",
+      "kind": "fact",
+      "importance": "critical",
+      "claim": "截至6月底，1000是注册账户，付费只有80家。",
+      "speaker": "Guest",
+      "evidence": [
+        {
+          "segment_id": "S0002",
+          "quote": "先更正，1000是注册账户，付费只有80家，统计截至6月底。我们还不能证明增长可持续。"
+        }
+      ],
+      "disposition": "included",
+      "reason": "",
+      "duplicate_of": null
+    },
+    {
+      "id": "U002",
+      "topic": "增长是否验证",
+      "kind": "fact",
+      "importance": "critical",
+      "claim": "Guest表示目前还不能证明增长可持续。",
+      "speaker": "Guest",
+      "evidence": [
+        {
+          "segment_id": "S0002",
+          "quote": "先更正，1000是注册账户，付费只有80家，统计截至6月底。我们还不能证明增长可持续。"
+        }
+      ],
+      "disposition": "included",
+      "reason": "",
+      "duplicate_of": null
+    },
+    {
+      "id": "U003",
+      "topic": "降本机制与边界",
+      "kind": "fact",
+      "importance": "critical",
+      "claim": "人工审核从每条请求改为仅处理模型不确定的请求。",
+      "speaker": "Guest",
+      "evidence": [
+        {
+          "segment_id": "S0003",
+          "quote": "我们把人工审核从每条请求改到模型不确定的请求，所以每个完成任务的成本从2美元降到0.80美元，前提是输入格式稳定。这不是每次调用的成本。"
+        }
+      ],
+      "disposition": "included",
+      "reason": "",
+      "duplicate_of": null
+    },
+    {
+      "id": "U004",
+      "topic": "降本机制与边界",
+      "kind": "fact",
+      "importance": "critical",
+      "claim": "输入格式稳定时，每个完成任务成本从2美元降至0.80美元；不是每次调用成本。",
+      "speaker": "Guest",
+      "evidence": [
+        {
+          "segment_id": "S0003",
+          "quote": "我们把人工审核从每条请求改到模型不确定的请求，所以每个完成任务的成本从2美元降到0.80美元，前提是输入格式稳定。这不是每次调用的成本。"
+        }
+      ],
+      "disposition": "included",
+      "reason": "",
+      "duplicate_of": null
+    },
+    {
+      "id": "U005",
+      "topic": "降本机制与边界",
+      "kind": "question",
+      "importance": "important",
+      "claim": "Host追问输入变化大时能否省掉审核。",
+      "speaker": "Host",
+      "evidence": [
+        {
+          "segment_id": "S0004",
+          "quote": "输入变化大，审核还可以省掉吗？"
+        }
+      ],
+      "disposition": "included",
+      "reason": "",
+      "duplicate_of": null
+    },
+    {
+      "id": "U006",
+      "topic": "降本机制与边界",
+      "kind": "fact",
+      "importance": "critical",
+      "claim": "医院试点输入变化大，成本反而上升，试点被暂停；审核不能省掉。",
+      "speaker": "Guest",
+      "evidence": [
+        {
+          "segment_id": "S0005",
+          "quote": "不可以。医院试点里输入变化太大，成本反而升高。我们暂停了这个试点。"
+        }
+      ],
+      "disposition": "included",
+      "reason": "",
+      "duplicate_of": null
+    },
+    {
+      "id": "U007",
+      "topic": "数据使用与删除",
+      "kind": "fact",
+      "importance": "important",
+      "claim": "Guest表示不用用户数据做默认训练。",
+      "speaker": "Guest",
+      "evidence": [
+        {
+          "segment_id": "S0006",
+          "quote": "另外一个独立话题，我们不用用户数据做默认训练，撤回授权后30天内删除，但法定留存日志除外。"
+        }
+      ],
+      "disposition": "included",
+      "reason": "",
+      "duplicate_of": null
+    },
+    {
+      "id": "U008",
+      "topic": "数据使用与删除",
+      "kind": "fact",
+      "importance": "important",
+      "claim": "Guest表示撤回授权后30天内删除数据。",
+      "speaker": "Guest",
+      "evidence": [
+        {
+          "segment_id": "S0006",
+          "quote": "另外一个独立话题，我们不用用户数据做默认训练，撤回授权后30天内删除，但法定留存日志除外。"
+        }
+      ],
+      "disposition": "included",
+      "reason": "",
+      "duplicate_of": null
+    },
+    {
+      "id": "U009",
+      "topic": "数据使用与删除",
+      "kind": "fact",
+      "importance": "critical",
+      "claim": "法定留存日志不适用上述删除承诺。",
+      "speaker": "Guest",
+      "evidence": [
+        {
+          "segment_id": "S0006",
+          "quote": "另外一个独立话题，我们不用用户数据做默认训练，撤回授权后30天内删除，但法定留存日志除外。"
+        }
+      ],
+      "disposition": "included",
+      "reason": "",
+      "duplicate_of": null
+    },
+    {
+      "id": "U010",
+      "topic": "海外版本可能性",
+      "kind": "speculation",
+      "importance": "important",
+      "claim": "未确认说话人称明年也许能做海外版本，并非确定计划。",
+      "speaker": "Unknown speaker",
+      "evidence": [
+        {
+          "segment_id": "S0007",
+          "quote": "明年也许能做海外版本。"
+        }
+      ],
+      "disposition": "included",
+      "reason": "",
+      "duplicate_of": null
+    },
+    {
+      "id": "U011",
+      "topic": "增长是否验证",
+      "kind": "question",
+      "importance": "important",
+      "claim": "Host把1000理解成付费客户并询问增长是否验证；随后被纠正。",
+      "speaker": "Host",
+      "evidence": [
+        {
+          "segment_id": "S0001",
+          "quote": "我听说你们有1000个付费客户，所以增长验证了吗？"
+        }
+      ],
+      "disposition": "included",
+      "reason": "",
+      "duplicate_of": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "podcast-deep-reader",
+  "plugins": [
+    {
+      "name": "podcast-deep-reader",
+      "source": {"source": "local", "path": "./"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Productivity"
+    }
+  ]
+}
