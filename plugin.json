@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "podcast-deep-reader",
-  "version": "0.1.0",
+  "name": "podcast-xmind",
+  "version": "0.1.1",
   "description": "Layered podcast reading with source-linked information ledgers and structural omission audits."
 }

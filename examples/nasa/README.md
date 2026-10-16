@@ -29,7 +29,7 @@ externally verified. [Material status and credit](../../NOTICE.md).
 From the repository root, use a fresh output directory:
 
 ```sh
-python3 skills/podcast-deep-reader/scripts/pdr.py prepare examples/nasa/source.json \
+python3 skills/podcast-xmind/scripts/pdr.py prepare examples/nasa/source.json \
   --out work/nasa-repro --scope full --chunk-chars 6000 \
   --scope-note 'Complete publisher transcript from intro to outro; audio not compared' \
   --source-url 'https://www.nasa.gov/podcasts/small-steps-giant-leaps/episode-181-passing-down-knowledge/'

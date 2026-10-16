@@ -4,10 +4,10 @@ Python 3.10+, standard library only. Commands run from any working directory
 when the script path is absolute. Paths below are examples, not mandatory names.
 
 ```sh
-python3 skills/podcast-deep-reader/scripts/pdr.py prepare episode.vtt \
+python3 skills/podcast-xmind/scripts/pdr.py prepare episode.vtt \
   --out work/episode --scope partial --scope-note 'User-provided excerpt' \
   --source-url 'https://example.org/episode'
-python3 skills/podcast-deep-reader/scripts/pdr.py audit \
+python3 skills/podcast-xmind/scripts/pdr.py audit \
   work/episode/transcript.json work/episode/ledger.json work/episode/reading.md \
   --out work/episode/audit.json
 ```

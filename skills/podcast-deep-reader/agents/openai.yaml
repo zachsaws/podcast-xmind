@@ -1,4 +1,0 @@
-interface:
-  display_name: "Podcast Deep Reader · 播客深读"
-  short_description: "Layered podcast reading with evidence and omission audits"
-  default_prompt: "Use $podcast-deep-reader to turn this podcast link or transcript into a layered deep reading in my language, preserving independent topics and evidence."

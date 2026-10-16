@@ -8,7 +8,7 @@ import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "skills/podcast-deep-reader/scripts/pdr.py"
+SCRIPT = ROOT / "skills/podcast-xmind/scripts/pdr.py"
 spec = importlib.util.spec_from_file_location("pdr", SCRIPT)
 pdr = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(pdr)
@@ -195,7 +195,7 @@ class DistributionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             run = subprocess.run([sys.executable, str(ROOT / 'scripts/install.py'), '--dest', d], capture_output=True)
             self.assertEqual(run.returncode, 0, run.stderr)
-            self.assertTrue((Path(d) / 'podcast-deep-reader/SKILL.md').is_file())
+            self.assertTrue((Path(d) / 'podcast-xmind/SKILL.md').is_file())
             again = subprocess.run([sys.executable, str(ROOT / 'scripts/install.py'), '--dest', d], capture_output=True)
             self.assertNotEqual(again.returncode, 0)
 
@@ -207,14 +207,14 @@ class DistributionTests(unittest.TestCase):
             first = (Path(d) / 'SHA256SUMS').read_bytes()
             subprocess.run(command, check=True, capture_output=True)
             self.assertEqual(first, (Path(d) / 'SHA256SUMS').read_bytes())
-            with zipfile.ZipFile(Path(d) / 'podcast-deep-reader-skill.zip') as z:
+            with zipfile.ZipFile(Path(d) / 'podcast-xmind-skill.zip') as z:
                 names = z.namelist()
-                self.assertEqual(names.count('podcast-deep-reader/SKILL.md'), 1)
+                self.assertEqual(names.count('podcast-xmind/SKILL.md'), 1)
                 self.assertTrue(any(n.endswith('/scripts/pdr.py') for n in names))
                 self.assertFalse(any('__pycache__' in n or '/runs/' in n for n in names))
-            with zipfile.ZipFile(Path(d) / 'podcast-deep-reader-plugin.zip') as z:
-                self.assertIn('podcast-deep-reader/plugin.json', z.namelist())
-                self.assertIn('podcast-deep-reader/skills/podcast-deep-reader/SKILL.md', z.namelist())
+            with zipfile.ZipFile(Path(d) / 'podcast-xmind-plugin.zip') as z:
+                self.assertIn('podcast-xmind/plugin.json', z.namelist())
+                self.assertIn('podcast-xmind/skills/podcast-xmind/SKILL.md', z.namelist())
 
 
 if __name__ == '__main__':

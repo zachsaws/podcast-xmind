@@ -21,9 +21,9 @@ and invocation on the target surface.
 ## Local Codex / Work path
 
 Run `python3 scripts/install.py --agent codex`. The destination is the current
-documented user discovery path `~/.agents/skills/podcast-deep-reader`. This does
+documented user discovery path `~/.agents/skills/podcast-xmind`. This does
 not edit configuration or overwrite an installed skill. Start a new chat if
-the picker is stale. Use `$podcast-deep-reader <link or transcript>` in Codex;
+the picker is stale. Use `$podcast-xmind <link or transcript>` in Codex;
 the ChatGPT desktop surface may expose `@` selection according to its mode.
 
 This release executed the skill's instructions and scripts inside the supplied
@@ -41,7 +41,7 @@ This is an authored distribution source, not a public directory listing.
 With a functioning Codex CLI, the documented registration command is:
 
 ```sh
-codex plugin marketplace add zachsaws/podcast-deep-reader --ref main
+codex plugin marketplace add zachsaws/podcast-xmind --ref main
 ```
 
 Then use the desktop Plugins Directory to select the marketplace, inspect and

@@ -6,7 +6,7 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-spec = importlib.util.spec_from_file_location('pdr', ROOT / 'skills/podcast-deep-reader/scripts/pdr.py')
+spec = importlib.util.spec_from_file_location('pdr', ROOT / 'skills/podcast-xmind/scripts/pdr.py')
 pdr = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(pdr)
 

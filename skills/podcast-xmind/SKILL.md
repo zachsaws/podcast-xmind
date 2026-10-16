@@ -1,12 +1,12 @@
 ---
-name: podcast-deep-reader
+name: podcast-xmind
 description: Turn podcast links, transcripts, subtitles or interviews into layered deep reading with information-unit ledgers, speaker attribution, evidence and omission audits. Use for reading instead of listening, 播客精读、播客整理、保留细节; not for promotional articles or verbatim transcript republication.
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
-# Podcast Deep Reader / 播客深读
+# Podcast XMind / 播客导图
 
 Help the reader recover the substance of a conversation faster than listening.
 Remove verbal repetition, not independent ideas. Optimize for useful retention,

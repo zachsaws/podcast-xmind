@@ -10,7 +10,7 @@ import sys
 import unicodedata
 from pathlib import Path
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 MAX_SEGMENT = 4000
 STAMP = r"(?:\d{1,3}:)?\d{2}:\d{2}(?:[.,]\d{1,3})?"
 TIMING = re.compile(rf"^\s*({STAMP})\s*-->\s*({STAMP})(?:\s+.*)?$")

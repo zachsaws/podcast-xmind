@@ -35,7 +35,7 @@ declared prompts, model settings and independent evaluation before publication.
 
 Possible announcement copy, to review before sending:
 
-> I built Podcast Deep Reader because a fluent summary can hide the detail I
+> I built Podcast XMind because a fluent summary can hide the detail I
 > needed. It turns a transcript or accessible episode link into a quick scan,
 > a deep read and source evidence, with an information ledger and omission
 > accounting. The repo includes an independent synthetic run, a real NASA case

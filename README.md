@@ -1,8 +1,8 @@
-# Podcast Deep Reader · 播客深读
+# Podcast XMind · 播客导图
 
 **读到细节，跳过冗余。把播客变成能追溯、能检查遗漏的分层阅读。**
 
-[English](README.en.md) · [先看真实输出](examples/nasa/run/reading.md) · [3分钟理解差异](examples/synthetic/README.md) · [下载](https://github.com/zachsaws/podcast-deep-reader/releases)
+[English](README.en.md) · [先看真实输出](examples/nasa/run/reading.md) · [3分钟理解差异](examples/synthetic/README.md) · [下载](https://github.com/zachsaws/podcast-xmind/releases)
 
 ![From source to layered reading, with evidence and coverage boundaries](assets/cover.svg)
 
@@ -10,7 +10,7 @@
 
 这个 Agent Skill 先逐段建立信息账本，再按主题重组，最后回到原稿核对。默认提供 **2–3分钟扫读 → 动态篇幅深读 → 按需原话证据**。长而有料的节目通常以15–25分钟深读为目标；短节目更短，高密度节目可更长。没有统一的2000字上限。
 
-> v0.1.0：已验证本地 Codex/Work 文件执行、独立代理示例、标准库工具和仓库示例；尚未验证 Claude Code 实机或本项目在普通 Chat 的原生 `@` 安装。结构审计通过不等于信息无遗漏。
+> v0.1.1：已验证本地 Codex/Work 文件执行、独立代理示例、标准库工具和仓库示例；尚未验证 Claude Code 实机或本项目在普通 Chat 的原生 `@` 安装。结构审计通过不等于信息无遗漏。
 
 ## 先看它会保住什么
 
@@ -34,24 +34,24 @@
 需要一个能读取技能的代理。脚本另需 Python 3.10+，无需额外依赖、API Key 或本项目服务；生成内容使用你当前代理的模型与工具。
 
 ```sh
-git clone https://github.com/zachsaws/podcast-deep-reader.git
-cd podcast-deep-reader
+git clone https://github.com/zachsaws/podcast-xmind.git
+cd podcast-xmind
 python3 scripts/install.py --agent codex
 ```
 
-安装到 `~/.agents/skills/podcast-deep-reader`，已有路径会拒绝覆盖。Codex 若没有刷新出新技能，开启新会话或重启。然后：
+安装到 `~/.agents/skills/podcast-xmind`，已有路径会拒绝覆盖。Codex 若没有刷新出新技能，开启新会话或重启。然后：
 
 ```text
-$podcast-deep-reader https://某期播客链接
+$podcast-xmind https://某期播客链接
 ```
 
 也可以直接给文件：
 
 ```text
-$podcast-deep-reader 请把这份 episode.vtt 整理成中文深读，保留论据、数字与独立话题。
+$podcast-xmind 请把这份 episode.vtt 整理成中文深读，保留论据、数字与独立话题。
 ```
 
-Claude Code 的目录安装：`python3 scripts/install.py --agent claude`，然后用 `/podcast-deep-reader <链接或文件>`。这符合其[官方技能目录格式](https://code.claude.com/docs/en/skills)，尚未做 Claude Code 实机验证。其他支持 [Agent Skills](https://agentskills.io/specification) 的代理可加载 `skills/podcast-deep-reader/`；能否读链接、转录音频取决于宿主。
+Claude Code 的目录安装：`python3 scripts/install.py --agent claude`，然后用 `/podcast-xmind <链接或文件>`。这符合其[官方技能目录格式](https://code.claude.com/docs/en/skills)，尚未做 Claude Code 实机验证。其他支持 [Agent Skills](https://agentskills.io/specification) 的代理可加载 `skills/podcast-xmind/`；能否读链接、转录音频取决于宿主。
 
 ## ChatGPT Plus 能直接 @ 吗？
 
@@ -81,16 +81,16 @@ Claude Code 的目录安装：`python3 scripts/install.py --agent claude`，然�
 
 ```sh
 # 支持 TXT/MD、SRT、VTT、segments JSON；保留原文件与时间码
-python3 skills/podcast-deep-reader/scripts/pdr.py prepare episode.vtt \
+python3 skills/podcast-xmind/scripts/pdr.py prepare episode.vtt \
   --out runs/episode --scope partial --scope-note '用户提供的字幕摘录'
 
 # 代理填好 ledger.json、写好 reading.md 后运行
-python3 skills/podcast-deep-reader/scripts/pdr.py audit \
+python3 skills/podcast-xmind/scripts/pdr.py audit \
   runs/episode/transcript.json runs/episode/ledger.json runs/episode/reading.md \
   --out runs/episode/audit.json
 ```
 
-没有模型API调用。`prepare` 不会自动完成深读；`audit` 不会替你判断主张真伪。命令、数据格式与退出码见[账本合同](skills/podcast-deep-reader/references/ledger-contract.md)。所有个人录音和运行材料放在 `runs/` 或用户指定目录，不提交进仓库。
+没有模型API调用。`prepare` 不会自动完成深读；`audit` 不会替你判断主张真伪。命令、数据格式与退出码见[账本合同](skills/podcast-xmind/references/ledger-contract.md)。所有个人录音和运行材料放在 `runs/` 或用户指定目录，不提交进仓库。
 
 ## 可以验证什么
 
@@ -102,7 +102,7 @@ python3 scripts/package.py --out dist
 
 - 测试涵盖时间码、字幕说话人、中文与JSON、分块守恒、拒绝静默丢弃、原文件哈希、引语不匹配、人物错归、遗漏单元、部分覆盖、拒绝覆盖安装与可复现打包。
 - 示例验证重新从原稿生成规范化片段，并重新审计已提交的真实阅读产物。
-- GitHub Actions 在 Python 3.10、3.12、3.13 运行相同检查；当前结果看 [Actions](https://github.com/zachsaws/podcast-deep-reader/actions)。
+- GitHub Actions 在 Python 3.10、3.12、3.13 运行相同检查；当前结果看 [Actions](https://github.com/zachsaws/podcast-xmind/actions)。
 
 审计能发现：账目不一致、引语找不到、说话人标签不一致、重要单元没进入深读、某主题未保留、原稿意外变动。它**不能证明**：原始信息都被提取了、引语确实支持主张、重要性评估正确、译文准确、音频转录无错或节目陈述真实。报告的单元覆盖数字只以代理建立的账本为分母。[评估方法与不足](docs/evaluation.md)。
 

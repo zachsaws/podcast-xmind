@@ -1,8 +1,8 @@
-# Podcast Deep Reader
+# Podcast XMind
 
 **Read the depth. Skip the filler.** Evidence-linked podcast reading with information ledgers and visible coverage boundaries.
 
-[中文](README.md) · [Real output](examples/nasa/run/reading.md) · [Source-to-output demo](examples/synthetic/README.md) · [Downloads](https://github.com/zachsaws/podcast-deep-reader/releases)
+[中文](README.md) · [Real output](examples/nasa/run/reading.md) · [Source-to-output demo](examples/synthetic/README.md) · [Downloads](https://github.com/zachsaws/podcast-xmind/releases)
 
 ![Source, ledger, layered reading, evidence](assets/cover.svg)
 
@@ -15,18 +15,18 @@ The output has three layers: a **2–3 minute scan**, a **dynamic deep read** (u
 Requires a skill-capable agent. Helper scripts require Python 3.10+, standard library only. No project API key, server, telemetry or model API integration is included; the host agent supplies reasoning and available tools.
 
 ```sh
-git clone https://github.com/zachsaws/podcast-deep-reader.git
-cd podcast-deep-reader
+git clone https://github.com/zachsaws/podcast-xmind.git
+cd podcast-xmind
 python3 scripts/install.py --agent codex
 ```
 
 ```text
-$podcast-deep-reader <episode link or transcript file>
+$podcast-xmind <episode link or transcript file>
 ```
 
-The installer copies the self-contained skill into `~/.agents/skills/podcast-deep-reader` and refuses to replace any existing path. Start a new session if discovery has not refreshed.
+The installer copies the self-contained skill into `~/.agents/skills/podcast-xmind` and refuses to replace any existing path. Start a new session if discovery has not refreshed.
 
-For Claude Code: `python3 scripts/install.py --agent claude`, then `/podcast-deep-reader <input>`. The directory follows [Claude Code's documented skill format](https://code.claude.com/docs/en/skills); a live Claude Code run has not been tested. Other [Agent Skills](https://agentskills.io/specification) hosts can load `skills/podcast-deep-reader/`. Tool availability varies.
+For Claude Code: `python3 scripts/install.py --agent claude`, then `/podcast-xmind <input>`. The directory follows [Claude Code's documented skill format](https://code.claude.com/docs/en/skills); a live Claude Code run has not been tested. Other [Agent Skills](https://agentskills.io/specification) hosts can load `skills/podcast-xmind/`. Tool availability varies.
 
 ## See the difference in actual artifacts
 
@@ -49,15 +49,15 @@ The agent first looks for a complete publisher transcript, lawful captions or a 
 ## Offline helpers
 
 ```sh
-python3 skills/podcast-deep-reader/scripts/pdr.py prepare episode.vtt \
+python3 skills/podcast-xmind/scripts/pdr.py prepare episode.vtt \
   --out runs/episode --scope partial --scope-note 'User-provided excerpt'
 # Agent fills ledger.json and writes reading.md, then:
-python3 skills/podcast-deep-reader/scripts/pdr.py audit \
+python3 skills/podcast-xmind/scripts/pdr.py audit \
   runs/episode/transcript.json runs/episode/ledger.json runs/episode/reading.md \
   --out runs/episode/audit.json
 ```
 
-Supports UTF-8 TXT/MD, SRT, VTT and documented segment JSON. Original bytes, hashes, source positions and actual cue times are retained. `prepare` does not generate prose. `audit` checks structural accounting and exact excerpt/speaker matching; it cannot establish completeness, truth, semantic entailment, translation quality or audio fidelity. Coverage metrics use the agent-selected ledger as their denominator. [Contract](skills/podcast-deep-reader/references/ledger-contract.md) / [Evaluation](docs/evaluation.md).
+Supports UTF-8 TXT/MD, SRT, VTT and documented segment JSON. Original bytes, hashes, source positions and actual cue times are retained. `prepare` does not generate prose. `audit` checks structural accounting and exact excerpt/speaker matching; it cannot establish completeness, truth, semantic entailment, translation quality or audio fidelity. Coverage metrics use the agent-selected ledger as their denominator. [Contract](skills/podcast-xmind/references/ledger-contract.md) / [Evaluation](docs/evaluation.md).
 
 ## Reproduce the checks
 
@@ -67,7 +67,7 @@ python3 scripts/verify_examples.py
 python3 scripts/package.py --out dist
 ```
 
-CI runs these checks on Python 3.10, 3.12 and 3.13. [Live Actions](https://github.com/zachsaws/podcast-deep-reader/actions). Packages are deterministic ZIPs with SHA-256 checksums; they exclude examples and private runs.
+CI runs these checks on Python 3.10, 3.12 and 3.13. [Live Actions](https://github.com/zachsaws/podcast-xmind/actions). Packages are deterministic ZIPs with SHA-256 checksums; they exclude examples and private runs.
 
 Please contribute specific, reproducible omissions using material you may share. [Contributing](CONTRIBUTING.md). Planned work starts with long-form, multi-speaker and multilingual evaluation, not unmeasured quality claims. Stars are welcome if the workflow is useful; no growth outcomes are promised. [Launch plan](docs/launch.md).
 

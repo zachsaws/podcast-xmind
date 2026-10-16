@@ -8,22 +8,22 @@ import zipfile
 
 def package(out):
     root = Path(__file__).resolve().parents[1]
-    skill = root / "skills" / "podcast-deep-reader"
+    skill = root / "skills" / "podcast-xmind"
     files = sorted(p for p in skill.rglob("*") if p.is_file()
                    and "__pycache__" not in p.parts and p.suffix != ".pyc")
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
     hashes = []
-    for name, plugin in [("podcast-deep-reader-skill.zip", False), ("podcast-deep-reader-plugin.zip", True)]:
+    for name, plugin in [("podcast-xmind-skill.zip", False), ("podcast-xmind-plugin.zip", True)]:
         target = out / name
         with zipfile.ZipFile(target, "w", compression=zipfile.ZIP_DEFLATED) as archive:
-            entries = [(p, "podcast-deep-reader/" + str(p.relative_to(root if plugin else skill.parent)).replace("\\", "/"))
+            entries = [(p, "podcast-xmind/" + str(p.relative_to(root if plugin else skill.parent)).replace("\\", "/"))
                        for p in files]
             if not plugin:
                 entries = [(p, str(p.relative_to(skill.parent)).replace("\\", "/")) for p in files]
-            entries.append((root / "LICENSE", "podcast-deep-reader/LICENSE"))
+            entries.append((root / "LICENSE", "podcast-xmind/LICENSE"))
             if plugin:
-                entries.append((root / "plugin.json", "podcast-deep-reader/plugin.json"))
+                entries.append((root / "plugin.json", "podcast-xmind/plugin.json"))
             for path, member in sorted(entries, key=lambda pair: pair[1]):
                 info = zipfile.ZipInfo(member, date_time=(2026, 1, 1, 0, 0, 0))
                 info.compress_type = zipfile.ZIP_DEFLATED

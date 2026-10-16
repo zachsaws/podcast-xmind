@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 def install(base):
-    source = Path(__file__).resolve().parents[1] / "skills" / "podcast-deep-reader"
+    source = Path(__file__).resolve().parents[1] / "skills" / "podcast-xmind"
     destination = Path(base).expanduser() / source.name
     if os.path.lexists(destination):
         raise FileExistsError(f"Refusing to replace existing path: {destination}")
