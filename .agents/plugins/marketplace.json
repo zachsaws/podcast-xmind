@@ -3,9 +3,18 @@
   "plugins": [
     {
       "name": "podcast-xmind",
-      "source": {"source": "local", "path": "./"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Productivity"
     }
-  ]
+  ],
+  "interface": {
+    "displayName": "播客导图 · Podcast XMind"
+  }
 }

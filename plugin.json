@@ -1,6 +1,24 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "podcast-xmind",
-  "version": "0.1.1",
-  "description": "Layered podcast reading with source-linked information ledgers and structural omission audits."
+  "version": "0.1.2",
+  "description": "Layered podcast reading with source-linked information ledgers and structural omission audits.",
+  "repository": "https://github.com/zachsaws/podcast-xmind",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "播客导图",
+        "shortDescription": "把播客整理成分层深读，保留细节、独立话题与原话证据。",
+        "developerName": "zachsaws",
+        "category": "Productivity",
+        "capabilities": [
+          "Research",
+          "Reading"
+        ],
+        "defaultPrompt": [
+          "请把这期播客整理成中文分层阅读，保留数字、推理、反例和独立话题。"
+        ]
+      }
+    }
+  }
 }

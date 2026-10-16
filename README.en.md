@@ -17,14 +17,16 @@ Requires a skill-capable agent. Helper scripts require Python 3.10+, standard li
 ```sh
 git clone https://github.com/zachsaws/podcast-xmind.git
 cd podcast-xmind
-python3 scripts/install.py --agent codex
+python3 scripts/install_plugin.py
 ```
 
 ```text
 $podcast-xmind <episode link or transcript file>
 ```
 
-The installer copies the self-contained skill into `~/.agents/skills/podcast-xmind` and refuses to replace any existing path. Start a new session if discovery has not refreshed.
+This registers the local marketplace and installs/enables the desktop plugin through the official Codex CLI. It prefers the desktop app's bundled executable and supports `--cli /absolute/path/to/codex`. Keep the repository at its registered location for future updates. Restart the desktop app and look for **播客导图** under Plugins in Chat's `@` menu; post-install Chat picker visibility still needs target-surface confirmation.
+
+For a standalone Codex/local Work skill only, use `python3 scripts/install.py --agent codex`. It copies into `~/.agents/skills/podcast-xmind` and refuses to replace an existing path. A standalone folder is not a plugin installation; avoid duplicate active entries.
 
 For Claude Code: `python3 scripts/install.py --agent claude`, then `/podcast-xmind <input>`. The directory follows [Claude Code's documented skill format](https://code.claude.com/docs/en/skills); a live Claude Code run has not been tested. Other [Agent Skills](https://agentskills.io/specification) hosts can load `skills/podcast-xmind/`. Tool availability varies.
 
@@ -38,7 +40,7 @@ The [real NASA example](examples/nasa/run/reading.md) turns a complete publisher
 
 As checked on **2026-10-16**, official [Build skills](https://learn.chatgpt.com/docs/build-skills) documents `@` skill invocation in ChatGPT, `$` in Codex and plugins as the cross-surface distribution route. The [official plan table](https://learn.chatgpt.com/docs/pricing) marks Skills and Plugins available for Plus. Product docs do not prove a particular account has installed this package or exposes the required custom installation flow; some official eligibility wording also differs by page.
 
-This repo ships `plugin.json`, a repo marketplace, a skill ZIP and a portable-plugin ZIP. **It is not listed in the public plugin directory and has not been installed and tested in the target account's native Chat `@` picker.** Local skill installation does not automatically sync a plugin to the web. Read [compatibility and acceptance steps](docs/compatibility.md).
+This repo ships `plugin.json`, a repo marketplace, plugin installer, skill ZIP and portable-plugin ZIP. In v0.1.2, local desktop registration and plugin installation were verified as installed and enabled. The user confirmed the earlier standalone skill appeared in Work but not Chat. **Post-install Chat picker visibility, web/mobile synchronization and public directory listing remain unverified.** Read [compatibility and acceptance steps](docs/compatibility.md).
 
 If your Chat surface lacks custom installation, use the [manual Chat/Project fallback](docs/chat-fallback.md). That is an instruction workflow, not a native skill or plugin.
 

@@ -10,7 +10,7 @@
 
 这个 Agent Skill 先逐段建立信息账本，再按主题重组，最后回到原稿核对。默认提供 **2–3分钟扫读 → 动态篇幅深读 → 按需原话证据**。长而有料的节目通常以15–25分钟深读为目标；短节目更短，高密度节目可更长。没有统一的2000字上限。
 
-> v0.1.1：已验证本地 Codex/Work 文件执行、独立代理示例、标准库工具和仓库示例；尚未验证 Claude Code 实机或本项目在普通 Chat 的原生 `@` 安装。结构审计通过不等于信息无遗漏。
+> v0.1.2：已验证本地 Codex/Work 文件执行和桌面插件注册安装。用户已实测独立技能在 Work 中可见、Chat 中不可见；本版补装插件，Chat 下拉框刷新后的显示仍待实测。结构审计通过不等于信息无遗漏。
 
 ## 先看它会保住什么
 
@@ -36,14 +36,16 @@
 ```sh
 git clone https://github.com/zachsaws/podcast-xmind.git
 cd podcast-xmind
-python3 scripts/install.py --agent codex
+python3 scripts/install_plugin.py
 ```
 
-安装到 `~/.agents/skills/podcast-xmind`，已有路径会拒绝覆盖。Codex 若没有刷新出新技能，开启新会话或重启。然后：
+这会用 Codex 官方 CLI 注册仓库的本地插件源，安装并启用「播客导图」插件。优先发现桌面应用自带的 CLI，也可用 `--cli /绝对路径/codex` 指定。保持仓库目录可用，供插件源后续更新。重启桌面应用后，在 Chat 的 `@` 菜单中查找**插件**「播客导图」；实际可见性仍需在目标界面确认。Codex 中也可调用：
 
 ```text
 $podcast-xmind https://某期播客链接
 ```
+
+如果只需要 Codex/本地 Work 的独立技能，可用 `python3 scripts/install.py --agent codex` 安装到 `~/.agents/skills/podcast-xmind`。这不等同于安装插件；不要同时保留两份同名入口。独立技能安装器会拒绝覆盖已有目录。
 
 也可以直接给文件：
 
@@ -61,8 +63,9 @@ Claude Code 的目录安装：`python3 scripts/install.py --agent claude`，然�
 
 | 路径 | 本项目提供什么 | 验证状态 |
 |---|---|---|
-| 本地 Codex / Work | 完整技能目录、安装器和离线辅助工具 | 已执行验证 |
-| Chat 原生 `@` | `plugin.json`、仓库 marketplace、技能ZIP和插件ZIP | 已打包；未上架目录、未在目标账号安装验证 |
+| 本地 Codex / Work | 完整技能目录、安装器和离线辅助工具 | 执行验证通过；用户确认 Work 可 `@` |
+| 桌面 Chat 原生 `@` | 插件显示名、marketplace 注册、插件安装器和插件ZIP | 已在本机安装并启用；Chat 菜单刷新后的可见性待实测 |
+| 网页 / 移动端 Chat | 可分发的插件包 | 未验证账号同步或安装；未上架公共目录 |
 | 无原生安装入口的 Chat | [项目指令与每次输入备用方案](docs/chat-fallback.md) | 手动提示工作流，**不是原生技能或插件** |
 
 具体安装入口、官方资料口径差异与目标账号验收步骤见[兼容性说明](docs/compatibility.md)。在本机复制技能不会自动同步到网页；把仓库链接发到 Chat 也不会自动安装插件。不要只因订阅 Plus 就假定已经具备自定义安装入口。

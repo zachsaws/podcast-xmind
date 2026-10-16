@@ -46,9 +46,33 @@ codex plugin marketplace add zachsaws/podcast-xmind --ref main
 
 Then use the desktop Plugins Directory to select the marketplace, inspect and
 install the package, and test in a new chat. Availability can vary by surface.
-The execution host's CLI launcher currently cannot find its bundled native
-executable (`ENOENT`), so this release did **not** run marketplace registration.
-No existing global marketplace or configuration was changed as a workaround.
+The PATH-installed CLI launcher failed to find its native executable during the
+initial release. On 2026-10-16, diagnosis found the desktop application's working
+bundled CLI. The new `python3 scripts/install_plugin.py` uses that executable
+when available, or accepts `--cli /absolute/path/to/codex`. It registers this
+repo as a local marketplace and installs `podcast-xmind@podcast-xmind`.
+
+## Observed desktop diagnosis and repair, v0.1.2
+
+The user reported the standalone skill was selectable in Work but absent in
+Chat. Comparison with the locally installed Writing Craft package showed that
+Writing Craft was a registered, installed and enabled plugin, while Podcast
+XMind only had a standalone skill plus an unregistered repo marketplace. This
+is a concrete installation difference and a likely cause of the observed
+visibility gap; it does not prove all product surfaces use identical discovery.
+
+The repair added Chinese plugin presentation metadata, registered the marketplace
+and installed the plugin through the official CLI. The installation readback
+reported version 0.1.2 with `installed: true` and `enabled: true`. Other parsed
+configuration values were checked and preserved. The unchanged former standalone
+installation was preserved outside the discovery path to avoid duplicate entries.
+No Writing Craft files or settings were changed.
+
+The computer-use tool refused access to the desktop application, so the Chat
+picker could not be inspected. Restart the desktop app, open a new Chat draft,
+type `@播客导图` and look under **Plugins**, not only Skills. This UI acceptance
+step remains pending. The local installation is not proof of account-level
+web/mobile synchronization or a public-directory listing.
 
 ZIP releases provide both a single-folder skill and a portable-plugin bundle.
 If an eligible UI offers a skill upload action, use the **skill ZIP**; do not
@@ -70,8 +94,8 @@ their own roles, confirmation flows and review requirements.
 5. Repeat with a transcript excerpt. Confirm it remains partial. Repeat with
    an inaccessible episode link. Confirm no invented episode contents.
 
-Until these are observed, native Chat compatibility is packaged/documented,
-not account-accepted. Use the local path now or the explicitly manual
+Until these are observed, desktop plugin installation is verified but Chat
+invocation is not account-accepted. Use the local path now or the explicitly manual
 [Chat fallback](chat-fallback.md).
 
 ## Claude Code and other hosts
